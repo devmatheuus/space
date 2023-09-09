@@ -6,7 +6,7 @@ export const InitialSection = styled.section`
     width: 100%;
     display: flex;
     align-items: center;
-    padding-top: ${pixelToRem(119)};
+    position: relative;
 
     .initial-section-text-container {
       width: 60%;
@@ -22,15 +22,14 @@ export const InitialSection = styled.section`
     }
 
     figure {
-      position: absolute;
-      top: 0px;
-      right: 0px;
       padding-top: ${pixelToRem(16)};
-      width: ${pixelToRem(550)};
-      height: ${pixelToRem(593)}; /* width: 30%; */
+      height: ${pixelToRem(593)};
       text-align: end;
 
       img {
+        position: absolute;
+        top: ${pixelToRem(-80)};
+        right: ${pixelToRem(-101)};
         max-width: 100%;
       }
     }
@@ -40,6 +39,5 @@ export const InitialSection = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: ${pixelToRem(135)};
   }
 `;
