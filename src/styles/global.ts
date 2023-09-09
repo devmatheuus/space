@@ -45,7 +45,7 @@ export const GlobalStyles = createGlobalStyle`
         --light-blue-uranus: #24ffe9;
         --background: #04032C;
         --background-form: #0E0D40;
-        --background-section: linear-gradient(180deg, #040327 0%, #0D0E13 24.49%);
+        --background-section: linear-gradient(180deg,#04032C 0%, #0D0E13 24.49%);
         --white: #fff;
         /* COLORS END */
 
