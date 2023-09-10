@@ -16,8 +16,10 @@ import { Header } from './styles/Header';
 import { InitialSection } from './styles/InitialSection';
 
 import { cardsDatas } from '../../utils/data/cardsData';
-import { AboutMarsStyle } from './styles/AboutMars';
+import { BlackAreaSection } from './styles/BlackAreaSection';
 import { SubTitle } from '../../components/SubTitle';
+import Carousel from '../../components/Carousel';
+import { MediaSection } from './styles/MediaSection';
 
 export const Home = () => {
   return (
@@ -35,7 +37,7 @@ export const Home = () => {
             <TextLabel text="finalmente é possível!" />
             <MainTitle>
               Sua jornada para Marte <br />
-              começa aqui.
+              começa aqui<span>.</span>
             </MainTitle>
 
             <Paragraph>
@@ -60,7 +62,7 @@ export const Home = () => {
         </div>
       </InitialSection>
 
-      <AboutMarsStyle>
+      <BlackAreaSection>
         <div className="about-mars-container">
           <div className="container-about-content">
             <figure className="about-mars-image">
@@ -92,8 +94,26 @@ export const Home = () => {
             <img src={Lines} alt="Lines Icon" />
           </figure>
         </div>
+
+        <MediaSection>
+          <div className="media-text-content">
+            <figure>
+              <img src={Logo} alt="Logo SpaceY" />
+            </figure>
+
+            <SubTitle>
+              O caminho para <br />
+              tornar a humanidade <br />
+              multiplanetária<span>.</span>
+            </SubTitle>
+
+            <TextLabel text="Inscreva-se agora" />
+          </div>
+          <Carousel />
+        </MediaSection>
+
         <div className="stars-background"></div>
-      </AboutMarsStyle>
+      </BlackAreaSection>
     </Container>
   );
 };
