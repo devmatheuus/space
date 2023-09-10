@@ -2,14 +2,15 @@ import styled from 'styled-components';
 import { pixelToRem } from '../../../utils/pixelToRem';
 import stars from '../../../assets/images/stars.png';
 
-export const AboutMarsStyle = styled.section`
+export const BlackAreaSection = styled.section`
   max-width: 100%;
   width: 100vw;
   position: absolute;
   left: 0;
   background: var(--background-section);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   z-index: 2;
   padding: ${pixelToRem(77)} ${pixelToRem(102)} 0 0;
 
